@@ -1,0 +1,101 @@
+body {
+    background-color: white;
+    color: black;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+body.dark-mode #section-2 {
+    background-color: #181616;
+    color: #ffffff;
+}
+
+body.dark-mode #section-4 {
+    background-color: #161515;
+    color: #ffffff;
+}
+
+body.dark-mode #section-6 {
+    background-color: #0a0909;
+    color: #ffffff;
+}
+
+body.dark-mode footer {
+    background-color: #211e24;
+    color: #ffffff;
+}
+
+body.dark-mode #card-big {
+    background-color: #080808;
+    color: #fff;
+    border: solid blue;
+    box-shadow: blue;
+}
+
+body.dark-mode #cards{
+    background-color: #161515;
+    color: #ffffff;
+    border: solid blue;
+}
+
+
+
+body.dark-mode a{
+    color: #fff;
+}
+
+.first:hover{
+    box-shadow: rgba(46, 130, 240, 0.4) -5px 5px, rgba(130, 46, 240, 0.3) -10px 10px, rgba(4, 182, 236, 0.2) -15px 15px, rgba(133, 3, 240, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+}
+
+#big-cards{
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+body.dark-mode #big-cards{
+   background-color: #161515;
+   color: #ffffff;
+   border: solid rgb(224, 240, 8);
+   
+}
+a {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    color: #2E2594;
+    position: relative;
+
+}
+
+   
+    a::after {
+        content: "";
+        position: absolute;
+        width: 0%;
+        height: 3px;
+        right: 0;
+        bottom: -3px;
+        border-radius: 12px;
+        background-color: gold;
+        transition: all 0.5s ease-in-out;
+    }
+
+    a:hover::after {
+        width: 100%;
+    }
+
+.bx-sun {
+    padding-left: 20px;
+
+    a:hover {
+        color: #ffd700;
+    }
+
+}
+
+
+

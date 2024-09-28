@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ta'lim</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <header>
+
+        <div class="container mx-auto">
+
+
+
+            <nav class="flex  md:flex justify-between items-center pt-5">
+
+                <div>
+                    <a href="#" class="text-black text-4xl font-bold"> &lt;BA /&gt; </a>
+                </div>
+
+
+                <div class="flex gap-10">
+
+                    <ul class=" hidden md:flex gap-5 items-center ">
+
+                        <li>
+                            <a class="text-base text-[#4B5563]" href="./index.html">Haqida</a>
+                        </li>
+                        <li>
+                            <a class="text-base text-[#4B5563]" href="./loyihalar.html">Loyihalar</a>
+                        </li>
+                        <li>
+                            <a class="text-base text-[#4B5563]" href="./contact.html">Kantakt</a>
+                        </li>
+                        <li>
+                            <a class="text-base text-[#4B5563]" href="./talim.html">Ta'lim</a>
+                        </li>
+
+                    </ul>
+
+
+                    <div class="sm:hidden">
+                        <button id="menuButton" class="p-4">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h16M4 18h16" />
+                            </svg>
+                        </button>
+
+
+                    </div>
+
+                    <div id="mobileMenu"
+                        class="fixed top-0 z-50 right-0 w-2/3   bg-white shadow-lg transform translate-x-full transition-transform sm:p-0 hidden">
+
+                        <button class="relative left-48 top-5" id="closeButton">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                        </button>
+
+                        <a class="block p-4 text-base text-[#4B5563]" href="./index.html">Haqida</a>
+
+                        <a class="block p-4 text-base text-[#4B5563]" href="./loyihalar.html">Loyihalar</a>
+
+                        <a class="block p-4 text-base text-[#4B5563]" href="./contact.html">Kantakt</a>
+
+                        <a class="block p-4 text-base text-[#4B5563]" href="./talim.html">Ta'lim</a>
+
+
+
+
+                    </div>
+
+
+
+
+                    <div class="hidden md:flex gap-5 border-l-2 ">
+
+                        <img id="darkModeToggle" class="ml-5 hover:cursor-pointer " src="./assets/icons/Icon Button.svg"
+                            alt="#">
+
+                        <button id="downloadCv" class="bg-black text-white p-2 rounded-xl">Download CV</button>
+                    </div>
+                </div>
+
+
+
+
+
+
+            </nav>
+        </div>
+
+    </header>
+
+    <main>
+
+        <section>
+            <div class="container mx-auto">
+
+                <div class="pt-40 pb-24 text-center text-2xl">
+                    <h1>Men Najot Ta'lim o'quv markaziga 2024-yil Frontend Bootcamp N9 gruhida o'qishni boshladim. <br>
+                        N9 gruhida bir qancha dasturlashga ishtiyoq bilan kirishgan aka-ukalar bilan tanishdim. <br>
+                        N9 gruhining asosiy ustozi Mukhriddin Khodiev,Yordamchi ustoz Islom Abdulaxatov kabi kuchli,
+                        <br>
+                        hushmuomila, o'z ishining ustalari,maslaxat va taklif beruvchi ustozlar dars berganlar.
+
+                    </h1>
+
+
+                    <h1 class="text-center text-5xl pt-20 font-serif animate-pulse">Najot Ta'lim</h1>
+
+
+
+                    <div class="  ml-5    pt-20   md:grid grid-cols-4 grid-rows-2 gap-2">
+
+                        <div id="big-cards"
+                            class=" ml-3 mb-5 w-[320px] md:w-[343px]  border rounded-lg  transition duration-300 hover:scale-105  ">
+
+                            <div class="p-5">
+                                <img src="./assets/Teachers/najot-2.png" alt="#">
+                            </div>
+                            <h1 class="text-center text-3xl pt-2 font-serif">Najot-Ta'lim</h1>
+                            <p class=" font-serif pl-5 pt-3 ">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Maecenas necurna ac tellus volutpat viverra Maecenas  volutpat.</p>
+
+                            <div class="flex justify-center gap-5 pt-5 mb-5">
+                                <a class="text-xl" href="https://quiet-kleicha-896fbd.netlify.app/"> <i
+                                        class="bi bi-columns-gap text-xl"></i> Live Previwe</a>
+                                <a class="text-xl" href="#"> <i class="bi bi-code-square text-xl"></i> Source Code</a>
+                            </div>
+
+                        </div>
+
+                        <div id="big-cards"
+                            class=" ml-3 mb-5 w-[320px] md:w-[343px]  border rounded-lg  transition duration-300 hover:scale-105  ">
+
+                            <div class="p-5">
+                                <img src="./assets/Teachers/najot-1.jpg" width="500px" height="Full" alt="#">
+                            </div>
+                            <h1 class="text-center text-3xl pt-2 font-serif">Shinma-xonalar</h1>
+                            <p class=" font-serif pl-5 pt-3 ">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Maecenas necurna ac tellus volutpat viverra.</p>
+
+                            <div class="flex justify-center gap-5 pt-5 mb-5">
+                                <a class="text-xl" href="https://quiet-kleicha-896fbd.netlify.app/"> <i
+                                        class="bi bi-columns-gap text-xl"></i> Live Previwe</a>
+                                <a class="text-xl" href="#"> <i class="bi bi-code-square text-xl"></i> Source Code</a>
+                            </div>
+
+                        </div>
+
+                        <div id="big-cards"
+                            class=" ml-3 mb-5 w-[320px] md:w-[343px]  border rounded-lg  transition duration-300 hover:scale-105  ">
+
+                            <div class="p-5">
+                                <img src="./assets/Teachers/najot-3.webp" width="500px" height="Full" alt="#">
+                            </div>
+                            <h1 class="text-center text-3xl pt-2 font-serif">Zamonaviy</h1>
+                            <p class=" font-serif pl-5 pt-3 ">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Maecenas necurna ac tellus volutpat viverra Maecenas necurna.</p>
+
+                            <div class="flex justify-center gap-5 pt-5 mb-5">
+                                <a class="text-xl" href="https://quiet-kleicha-896fbd.netlify.app/"> <i
+                                        class="bi bi-columns-gap text-xl"></i> Live Previwe</a>
+                                <a class="text-xl" href="#"> <i class="bi bi-code-square text-xl"></i> Source Code</a>
+                            </div>
+
+                        </div>
+
+                        <div id="big-cards"
+                            class=" ml-3 mb-5 w-[320px] md:w-[343px]  border rounded-lg  transition duration-300 hover:scale-105  ">
+
+                            <div class="p-5">
+                                <img src="./assets/Teachers/kuchli o'quv markaz.webp" width="500px" height="Full"
+                                    alt="">
+                            </div>
+                            <h1 class="text-center text-3xl pt-2 font-serif">Najot-Ta'lim</h1>
+                            <p class=" font-serif pl-5 pt-3 ">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Maecenas necurna ac tellus volutpat viverra Maecenas necurna.</p>
+
+                            <div class="flex justify-center gap-5 pt-5 mb-5">
+                                <a class="text-xl" href="https://quiet-kleicha-896fbd.netlify.app/"> <i
+                                        class="bi bi-columns-gap text-xl"></i> Live Previwe</a>
+                                <a class="text-xl" href="#"> <i class="bi bi-code-square text-xl"></i> Source Code</a>
+                            </div>
+
+                        </div>
+
+                        <div id="big-cards"
+                            class=" ml-3 mb-5 w-[320px] md:w-[343px]  border rounded-lg  transition duration-300 hover:scale-105  ">
+
+                            <div class="p-5">
+                                <img src="./assets/Teachers/Master classlar.jpg" width="500px" height="Full" alt="">
+                            </div>
+                            <h1 class="text-center text-3xl pt-2 font-serif">Master-claslar</h1>
+                            <p class=" font-serif pl-5 pt-3 ">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Maecenas necurna ac tellus volutpat viverra .</p>
+
+                            <div class="flex justify-center gap-5 pt-5 mb-5">
+                                <a class="text-xl" href="https://quiet-kleicha-896fbd.netlify.app/"> <i
+                                        class="bi bi-columns-gap text-xl"></i> Live Previwe</a>
+                                <a class="text-xl" href="#"> <i class="bi bi-code-square text-xl"></i> Source Code</a>
+                            </div>
+
+                        </div>
+
+                        <div id="big-cards"
+                            class=" ml-3 mb-5 w-[320px] md:w-[343px]  border rounded-lg  transition duration-300 hover:scale-105  ">
+
+                            <div class="p-5">
+                                <img src="./assets/Teachers/cworking-zone.jpg" width="500px" height="Full" alt="">
+                            </div>
+                            <h1 class="text-center text-3xl pt-2 font-serif">Cworkinglar</h1>
+                            <p class=" font-serif pl-5 pt-3 ">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Maecenas necurna ac tellus volutpat viverra Maecenas necurna.ipsum dolor sit amet,ipsum dolor sit amet,</p>
+
+                            <div class="flex justify-center gap-5 pt-5 mb-5">
+                                <a class="text-xl" href="https://quiet-kleicha-896fbd.netlify.app/"> <i
+                                        class="bi bi-columns-gap text-xl"></i> Live Previwe</a>
+                                <a class="text-xl" href="#"> <i class="bi bi-code-square text-xl"></i> Source Code</a>
+                            </div>
+
+                        </div>
+
+                        <div id="big-cards"
+                            class=" ml-3 mb-5 w-[320px] md:w-[343px]  border rounded-lg  transition duration-300 hover:scale-105  ">
+
+                            <div class="p-5">
+                                <img src="./assets/Teachers/musobaqalar.jpg" width="500px" height="Full" alt="">
+                            </div>
+                            <h1 class="text-center text-3xl pt-2 font-serif">Musobaqalar</h1>
+                            <p class=" font-serif pl-5 pt-3 ">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Maecenas necurna ac tellus volutpat viverra Maecenas necurna.</p>
+
+                            <div class="flex justify-center gap-5 pt-5 mb-5">
+                                <a class="text-xl" href="https://quiet-kleicha-896fbd.netlify.app/"> <i
+                                        class="bi bi-columns-gap text-xl"></i> Live Previwe</a>
+                                <a class="text-xl" href="#"> <i class="bi bi-code-square text-xl"></i> Source Code</a>
+                            </div>
+
+                        </div>
+
+                        <div id="big-cards"
+                            class=" ml-3 mb-5 w-[320px] md:w-[343px]  border rounded-lg  transition duration-300 hover:scale-105  ">
+
+                            <div class="p-5">
+                                <img src="./assets/Teachers/imtihon.webp" width="500px" height="Full" alt="">
+                            </div>
+                            <h1 class="text-center text-3xl pt-2 font-serif">Imtihonlar</h1>
+                            <p class=" font-serif pl-5 pt-3 ">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Maecenas necurna ac tellus volutpat viverra.</p>
+
+                            <div class="flex justify-center gap-5 pt-5 mb-5">
+                                <a class="text-xl" href="https://quiet-kleicha-896fbd.netlify.app/"> <i
+                                        class="bi bi-columns-gap text-xl"></i> Live Previwe</a>
+                                <a class="text-xl" href="#"> <i class="bi bi-code-square text-xl"></i> Source Code</a>
+                            </div>
+
+                        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="section-4" class="bg-[#F9FAFB]">
+            <div class="container mx-auto">
+
+                <div class="pt-24 pb-24">
+
+                    <div class="text-center">
+                        <button class="w-20 h-7 bg-[#E5E7EB] text-[#4B5563] rounded-xl">Education</button>
+                        <br><br>
+                        <h1 class="text-xl">I studied at the Najot ta'lim traning Center</h1>
+                    </div>
+
+                    <div id="card-big"
+                        class=" md:flex md:justify-between border p-8 bg-white rounded-xl shadow-2xl mt-12 transition duration-300 hover:scale-105 ">
+
+                        <div>
+                            <img src="./assets/icons/Najot talim.svg" alt="">
+                        </div>
+
+                        <div>
+                            <h1 class="text-xl">Najot ta'lim</h1><br>
+                            <ul>
+                                <li>😍great atmosfera</li><br>
+                                <li>👌quality education</li><br>
+                                <li>💪teachers with strong knowledge</li><br>
+                                <li>🤙comfrotable rooms</li><br>
+                                <li>🏆interesting competitions</li><br>
+
+                            </ul>
+                        </div>
+
+                        <div>
+                            <h1 class=" text-base  md:text-2xl">In 2024 I studied Najot ta'lim</h1>
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container mx-auto">
+                <div class="pt-24">
+
+                    <div class="text-center">
+                        <button class="w-20 h-7 bg-[#E5E7EB] text-[#4B5563] rounded-xl">Teachers</button>
+                        <br><br>
+                        <h1 class="text-xl">Menga ta'lim bergan ustozlarim</h1>
+                    </div>
+
+
+                    <div class=" ml-7 justify-center md:flex  md:justify-between md:p-24">
+
+                        <div id="cards"
+                            class=" w-[343px] h-[348px]  border md:w-[373px] md:h-[428px] p-9 rounded-xl shadow-2xl transition duration-300 hover:scale-105 mt-12">
+                            <div class="ml-[85px] md:pb-8 ">
+                                <img class="rounded-[50%] w-32" src="./assets/Teachers/photo_2024-08-23_01-42-01.jpg"
+                                    alt="#"><br>
+                            </div>
+
+                            <div>
+                                <p class="text-center">“Mukhriddin Khodiev Full stack developer. 7-yil davomida web
+                                    ilovalar
+                                    ishlab chiqishda va loyihalashda ish olib borgan.”</p>
+
+                                <h1 class="text-center font-semibold ">Khodiev Mukhriddin</h1>
+                                <p class="text-center">My Teacher</p>
+                            </div>
+                        </div>
+
+
+                        <div id="cards"
+                            class=" w-[343px] h-[348px] border md:w-[373px] md:h-[428px] p-9 rounded-xl shadow-2xl transition duration-300 hover:scale-105 mt-12">
+
+                            <div class="ml-[85px] md:pb-8">
+                                <img class="rounded-[50%] w-32" src="./assets/Teachers/islomabdulaxatov.jpg"
+                                    alt="#"><br>
+                            </div>
+
+                            <div>
+                                <p class="text-center">“Islom Abdulaxatov Full Stack developer. Najot Ta'lim o'quv
+                                    markazidagi
+                                    eng yaxshi o'qituvchilardan biri.”</p>
+                                <h1 class="text-center font-semibold">Islom Abdulaxatov</h1>
+                                <p class="text-center">My Teacher</p>
+                            </div>
+                        </div>
+
+
+                        <div id="cards"
+                            class=" w-[343px] h-[348px] border md:w-[373px] md:h-[428px] p-9 rounded-xl shadow-2xl transition duration-300 hover:scale-105 mt-12">
+                            <div class="ml-[85px] md:pb-8">
+                                <img class="rounded-[50%] w-32" src="./assets/Teachers/ibrokhimjalolov.jpg" alt="#"><br>
+                            </div>
+
+                            <div>
+                                <p class="text-center">“Ibrokhim Jalolov Full Stack developer.Ibrohim ustoz Najot Ta'lim
+                                    o'quv
+                                    markazidagi eng kuchli bilimga ega ustozlardan biri.”</p>
+                                <h1 class="text-center font-semibold">Ibrokhim Jalolov</h1>
+                                <p class="text-center">My Teacher</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-slate-200">
+        <div class="p-6">
+            <p class="text-center">2024-yil Barcha Huquqlar himoyalangan!</p>
+        </div>
+    </footer>
+
+</body>
+<script>
+
+    const darkModeToggle = document.getElementById('darkModeToggle');
+    const body = document.body;
+
+    darkModeToggle.addEventListener('click', function () {
+        body.classList.toggle('dark-mode');
+    });
+
+
+
+
+    const menuButton = document.getElementById('menuButton');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const closeButton = document.getElementById('closeButton');
+
+    closeButton.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+        mobileMenu.classList.add('translate-x-full');
+    });
+
+    menuButton.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+        mobileMenu.classList.toggle('translate-x-full');
+    });
+
+
+</script>
+
+</html>
