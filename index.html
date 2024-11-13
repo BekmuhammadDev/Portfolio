@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets//icons//Bicon.png" type="image/x-icon">
     <title>Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
@@ -11,6 +12,19 @@
 </head>
 
 <body>
+
+    <div id="loader" class="loader">
+
+        <div class="load-wrapper">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </div>
+
+    </div>
 
     <header>
 
@@ -220,21 +234,21 @@
                 <div class=" ml-5  md:grid grid-cols-4  gap-5  pt-10 pb-20">
 
                     <div id="big-cards"
-                    class=" ml-3 mb-5 w-[320px] md:w-[343px]  border rounded-lg  transition duration-300 hover:scale-105  ">
+                        class=" ml-3 mb-5 w-[320px] md:w-[343px]  border rounded-lg  transition duration-300 hover:scale-105  ">
 
-                    <div class="p-5">
-                        <img src="./assets/img/web-assistent.png" alt="#">
+                        <div class="p-5">
+                            <img src="./assets/img/web-assistent.png" alt="#">
+                        </div>
+                        <h1 class="text-center text-3xl pt-2 font-bold">Designer</h1>
+                        <p class=" font-bold pl-5 pt-3 text-center">Chip-Dip web sahifasi texnik qurilmalar,avto
+                            zapchastlar va turli xil mahsulotlar bazasi hisoblanadi. </p>
+
+                        <div class="flex justify-center gap-5 pt-5 mb-5">
+                            <a class="text-xl" href="https://reacte88.netlify.app/"> <i
+                                    class="bi bi-columns-gap text-xl"></i> Live Previwe</a>
+                            <a class="text-xl" href="#"> <i class="bi bi-code-square text-xl"></i> Source Code</a>
+                        </div>
                     </div>
-                    <h1 class="text-center text-3xl pt-2 font-bold">Designer</h1>
-                    <p class=" font-bold pl-5 pt-3 text-center">Chip-Dip web sahifasi texnik qurilmalar,avto zapchastlar va turli xil mahsulotlar bazasi hisoblanadi. </p>
-
-                    <div class="flex justify-center gap-5 pt-5 mb-5">
-                        <a class="text-xl" href="https://reacte88.netlify.app/"> <i
-                                class="bi bi-columns-gap text-xl"></i> Live Previwe</a>
-                        <a class="text-xl" href="#"> <i class="bi bi-code-square text-xl"></i> Source Code</a>
-                    </div>
-                </div>
-
 
                     <div id="big-cards"
                         class=" ml-3 mb-5 w-[320px] md:w-[343px]  border rounded-lg  transition duration-300 hover:scale-105  ">
@@ -243,7 +257,8 @@
                             <img src="./assets/img/chip-dip.png" alt="#">
                         </div>
                         <h1 class="text-center text-3xl pt-2 font-bold">Chip-Dip</h1>
-                        <p class=" font-bold pl-5 pt-3 text-center">Chip-Dip web sahifasi texnik qurilmalar,avto zapchastlar va turli xil mahsulotlar bazasi hisoblanadi. </p>
+                        <p class=" font-bold pl-5 pt-3 text-center">Chip-Dip web sahifasi texnik qurilmalar,avto
+                            zapchastlar va turli xil mahsulotlar bazasi hisoblanadi. </p>
 
                         <div class="flex justify-center gap-5 pt-5 mb-5">
                             <a class="text-xl" href="https://chip-dip-project.netlify.app/"> <i
@@ -545,6 +560,73 @@
             </div>
         </section>
 
+        <section class="bg-[#F9FAFB]">
+            <div class="container mx-auto">
+                <div class="carousel md:ml-80">
+
+                    <div class="carousel-control-button left"><input type="radio" name="carousel-control-input"></div>
+                    <div class="carousel-control-button right"><input type="radio" name="carousel-control-input"
+                            checked></div>
+
+                    <div class="carousel-rotation-direction">
+
+                        <ul class="carousel-item-wrapper" style="--_num-elements: 11">
+
+                            <li class="carousel-item"
+                                style="--_index: 1; --_image-url: url('https://images.unsplash.com/photo-1706485220806-2d0d9ce98555?q=80&w=2127&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')">
+                                <a target="_blank">Architecture Example 1</a>
+                            </li>
+                            <li class="carousel-item"
+                                style="--_index: 2; --_image-url: url('https://images.unsplash.com/photo-1706146280538-620fa8cda080?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')">
+                                <a href="" target="_blank">Architecture Example 2</a>
+                            </li>
+                            <li class="carousel-item"
+                                style="--_index: 3; --_image-url: url('https://images.unsplash.com/photo-1702298616106-adbe0f447455?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')">
+                                <a href="" target="_blank">Architecture Example 3</a>
+                            </li>
+                            <li class="carousel-item"
+                                style="--_index: 4; --_image-url: url('https://images.unsplash.com/photo-1565363887713-783cd82d36d2?q=80&w=1364&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')">
+                                <a href="" target="_blank">Architecture Example 4</a>
+                            </li>
+                            <li class="carousel-item"
+                                style="--_index: 5; --_image-url: url('https://images.unsplash.com/photo-1701025034709-bef78e69d1ee?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')">
+                                <a href="" target="_blank">Architecture Example 5</a>
+                            </li>
+                            <li class="carousel-item"
+                                style="--_index: 6; --_image-url: url('https://images.unsplash.com/photo-1701824580548-4f285fc0b80a?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')">
+                                <a href="" target="_blank">Architecture Example 6</a>
+                            </li>
+                            <li class="carousel-item"
+                                style="--_index: 7; --_image-url: url('https://images.unsplash.com/photo-1558472306-75b150ac26eb?q=80&w=2030&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')">
+                                <a href="" target="_blank">Architecture Example 7</a>
+                            </li>
+                            <li class="carousel-item"
+                                style="--_index: 8; --_image-url: url('https://images.unsplash.com/photo-1713623210045-95d02b35c4a2?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')">
+                                <a href="" target="_blank">Architecture Example 8</a>
+                            </li>
+                            <li class="carousel-item"
+                                style="--_index: 9; --_image-url: url('https://images.unsplash.com/photo-1700846968547-ace2dacd5e0b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')">
+                                <a href="" target="_blank">Architecture Example 9</a>
+                            </li>
+                            <li class="carousel-item"
+                                style="--_index: 10; --_image-url: url('https://images.unsplash.com/photo-1700846978475-5f4dd936c00a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')">
+                                <a href="" target="_blank">Architecture Example 10</a>
+                            </li>
+                            <li class="carousel-item"
+                                style="--_index: 11; --_image-url: url('https://images.unsplash.com/photo-1707788620837-cd3efcce3ceb?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')">
+                                <a href="" target="_blank">Architecture Example 11</a>
+                            </li>
+
+                            <li class="carousel-ground"></li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
         <section id="section-6" class="bg-[#F9FAFB]">
             <div class="container mx-auto">
 
@@ -590,6 +672,44 @@
             </div>
         </section>
 
+        <section>
+            <div class="container mx-auto mt-60 mb-40">
+                <div class="business-card" ontouchstart="this.classList.toggle('hover');">
+                    <div class="flipper">
+                        <div class="front">
+                            <div class="name">
+                                <span class="last">Aripov</span>
+                                <span class="first">Bekmuhammad</span>
+                                <span class="title">Web Developer</span>
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div class="container-sm">
+                                <figure class="logo-white"></figure>
+                            </div>
+                            <div class="container-lg">
+                                <ul class="social fa-ul">
+                                    <li><i class="fa fa-li fa-globe"></i><a href="http://nickdobie.com">Website</a></li>
+                                    <li><i class="fa fa-li fa-envelope"></i><a
+                                            href="mailto:nick@nickdobie.com">aripovbekmuhammad2@gmail.com</a></li>
+                                    <li><i class="fa fa-li fa-phone"></i><a href="tel:+15073515278">(+9989) 99
+                                            895-35-01</a></li>
+                                    <li><i class="fa fa-li fa-codepen"></i><a
+                                            href="https://codepen.io/nrdobie">WebCode</a></li>
+                                    <li><i class="fa fa-li fa-github"></i><a
+                                            href="https://github.com/nrdobie">GitHub</a></li>
+                                    <li><i class="fa fa-li fa-reddit"></i><a
+                                            href="http://reddit.com/u/ndobie">Reddit</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+            </div>
+        </section>
+
     </main>
 
     <footer class="bg-slate-200">
@@ -610,9 +730,6 @@
         body.classList.toggle('dark-mode');
     });
 
-
-
-
     const menuButton = document.getElementById('menuButton');
     const mobileMenu = document.getElementById('mobileMenu');
     const closeButton = document.getElementById('closeButton');
@@ -625,6 +742,15 @@
     menuButton.addEventListener('click', () => {
         mobileMenu.classList.toggle('hidden');
         mobileMenu.classList.toggle('translate-x-full');
+    });
+
+
+
+    // Loaderni avtomatik yashirish funksiyasi
+    window.addEventListener("load", function () {
+        setTimeout(function () {
+            document.getElementById("loader").classList.add("loader-hide");
+        }, 2000); // 5 soniyadan keyin loader yo'qoladi
     });
 
 

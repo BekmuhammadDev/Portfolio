@@ -42,8 +42,6 @@ body.dark-mode #cards{
     border: solid blue;
 }
 
-
-
 body.dark-mode a{
     color: #fff;
 }
@@ -71,19 +69,6 @@ a {
 
 }
 
-   
-    a::after {
-        content: "";
-        position: absolute;
-        width: 0%;
-        height: 3px;
-        right: 0;
-        bottom: -3px;
-        border-radius: 12px;
-        background-color: gold;
-        transition: all 0.5s ease-in-out;
-    }
-
     a:hover::after {
         width: 100%;
     }
@@ -97,5 +82,545 @@ a {
 
 }
 
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300);
+
+body {
+  background-image: url(https://subtlepatterns.com/patterns/gplaypattern.png);
+  background-position: center center;
+  font-family: 'Open Sans', sans-serif;
+}
+
+div.business-card {
+  height: 427px;
+  width: 320px;
+  margin-left: -210px;
+  margin-top: -213.5px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  perspective: 1000px;
+}
+
+div.business-card:hover .flipper,
+div.business-card.hover .flipper {
+  transform: rotateY(180deg) rotateZ(90deg);
+}
+
+div.flipper {
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
+  transform-origin: center 160px;
+}
+
+div.front, div.back {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 527px;
+  width: 420px;
+  box-shadow: 0 0 50px rgba(0,0,0,0.75);
+}
+
+div.front {
+  background-color: white;
+  z-index: 0;
+}
+
+div.front:before, div.front:after {
+  display: block;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-width: 210px;
+  border-style: solid;
+  border-color: transparent;
+}
+
+div.front:before {
+  border-top-color: #288FBD;
+  border-left-color: #288FBD;
+  z-index: 2;
+}
+
+div.front:after {
+  border-top-color: #005D8C;
+  border-right-color: #005D8C;
+}
+
+div.front .name {
+  position: absolute;
+  bottom: 83.5px;
+  left: 85px;
+}
+
+div.front .name span {
+  display: block;
+  font-size: 40px;
+  line-height: 45px;
+}
+
+div.front .name span.first {
+  color: #005D8C;
+}
+
+div.front .name span.last {
+  color: #288FBD;
+}
+
+div.front .name span.title {
+  font-size: 20px;
+  line-height: 20px;
+}
+
+div.back {
+  background-color: #005D8C;
+  color: white;
+  width: 527px;
+  height: 320px;
+  box-sizing: border-box;
+  transform: rotateY(180deg) rotateZ(90deg);
+}
+
+div.back .container-sm {
+  float: left;
+  width: 40%;
+  height: 100%;
+  position: relative;
+}
+
+div.back .container-lg {
+  float: left;
+  width: 60%;
+  margin-top: 2rem;
+}
+
+div.back figure.logo-white {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 120px;
+  height: 120px;
+  display: block;
+  margin: -60px -60px;
+}
+
+div.back figure.logo-white:before,
+div.back figure.logo-white:after {
+  display: block;
+  content: '';
+  position: absolute;
+  border-style: solid;
+  border-color: transparent;
+}
+
+div.back figure.logo-white:before {
+  top: 0;
+  left: 0;
+  border-width: 60px;
+  border-top-color: white;
+  border-left-color: white;
+  z-index: 2;
+}
+
+div.back figure.logo-white:after {
+  bottom: 0;
+  right: 0;
+  border-width: 56px;
+  border-right-color: white;
+}
+
+div.back a {
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+
+div.back a:hover {
+  text-decoration: underline;
+}
+
+div.back ul.social {
+  font-size: 1.25rem;
+}
+
+div.back ul.social li {
+  margin-top: 1rem;
+}
+
+div.back ul.social li:first-child {
+  margin-top: 2rem;
+}
+
+
+/*
+vars
+*/
+:root {
+    --carousel-transition-duration: 250ms;
+    --carousel-transition-ease: ease-out;
+    --carousel-bg-color-rgb: 0, 0, 0;
+    --carousel-shadow-color-rgb: 128, 128, 128;
+    --carousel-item-width: 11.5rem;
+    --carousel-item-height: 17.5rem;
+    --carousel-item-hover-effect: 1.075;
+    --carousel-item-reflection-blur: 0.25rem;
+    --carousel-item-empty-color-rgb: 255, 255, 255;
+    --carousel-item-glow-color-rgb: 255, 255, 255;
+    --carousel-item-glow-size: 5rem;
+    --carousel-diameter: 50rem;
+    --carousel-3d-perspective: 1000px;
+    --carousel-3d-perspective-origin: 50% 20%;
+    --carousel-control-button-width: 1.25rem;
+    --carousel-control-button-height: 4rem;
+    --carousel-control-color-rgb: 255, 255, 255;
+    --carousel-animation-duration: 25s;
+    --carousel-animation-play-state: running;
+    --carousel-direction-animation-play-state: paused;
+}
+
+/*
+global
+*/
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+*:focus {
+    outline: none;
+}
+
+a {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+/*
+carousel
+*/
+.carousel {
+    --_diameter: var(--carousel-diameter);
+    --_radius: calc(var(--_diameter) / 2);
+    --_item-width: var(--carousel-item-width);
+    --_item-height: var(--carousel-item-height);
+    perspective: var(--carousel-3d-perspective);
+    perspective-origin: var(--carousel-3d-perspective-origin);
+    width: var(--_diameter);
+    height: var(--_diameter);
+    /* border: 1px solid #ffffff; */
+}
+
+@media only screen and (max-width: 48rem) {
+    .carousel {
+            --_diameter: calc(var(--carousel-diameter) * 0.75);
+            --_item-width: calc(var(--carousel-item-width) * 0.75);
+            --_item-height: calc(var(--carousel-item-height) * 0.75);
+    }
+}
+
+@media only screen and (max-width: 32rem) {
+    .carousel {
+            --_diameter: calc(var(--carousel-diameter) * 0.6);
+            --_item-width: calc(var(--carousel-item-width) * 0.6);
+            --_item-height: calc(var(--carousel-item-height) * 0.6);
+    }
+}
+
+@media only screen and (max-width: 16rem) {
+    .carousel {
+            --_diameter: calc(var(--carousel-diameter) * 0.25);
+            --_item-width: calc(var(--carousel-item-width) * 0.25);
+            --_item-height: calc(var(--carousel-item-height) * 0.25);
+    }
+}
+
+.carousel .carousel-control-button {
+    --_width: var(--carousel-control-button-width);
+    --_height: var(--carousel-control-button-height);
+    z-index: 1;
+    width: var(--_width);
+    height: var(--_height);
+    background-color: rgb(var(--carousel-control-color-rgb));
+    opacity: 0.2;
+    transition: opacity var(--carousel-transition-duration) var(--carousel-transition-ease);
+    position: absolute;
+}
+.carousel .carousel-control-button:hover {
+    opacity: 0.4;
+}
+.carousel .carousel-control-button:has(input:checked) {
+    opacity: 0.8;
+}
+
+.carousel .carousel-control-button input {
+    -webkit-appearance: none;
+    appearance: none;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.carousel .carousel-control-button.left {
+    clip-path: polygon(0% 50%, 100% 0%, 100% 100%);
+    top: calc(var(--_radius) - var(--_height) / 2);
+    left: 0;
+}
+.carousel:has(.carousel-control-button.left input:checked) {
+    --carousel-direction-animation-play-state: running;
+}
+
+.carousel .carousel-control-button.right {
+    clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
+    top: calc(var(--_radius) - var(--_height) / 2);
+    right: 0;
+}
+.carousel:has(.carousel-control-button.right input:checked) {
+    --carousel-direction-animation-play-state: paused;
+}
+
+.carousel .carousel-rotation-direction {
+    --_direction-animation-play-state: var(--carousel-direction-animation-play-state);
+    --_z: calc(var(--_radius) * -1);
+    transform: translateZ(var(--_z));
+    transform-style: preserve-3d;
+    animation: carousel-rotation-reverse calc(var(--carousel-animation-duration) / 2) reverse linear infinite var(--_direction-animation-play-state);
+    transition: all var(--carousel-transition-duration) var(--carousel-transition-ease);
+}
+
+@keyframes carousel-rotation-reverse {
+    from {transform: translateZ(var(--_z)) rotateY(0deg);}
+    to {transform: translateZ(var(--_z)) rotateY(360deg);}
+}
+
+@keyframes carousel-rotation-normal {
+    from {transform: rotateY(0deg);}
+    to {transform: rotateY(360deg);}
+}
+
+.carousel .carousel-item-wrapper {
+    transform-style: inherit;
+    width: inherit;
+    height: inherit;
+    list-style-type: none;
+    position: relative;
+    animation: carousel-rotation-normal var(--carousel-animation-duration) normal linear infinite var(--carousel-animation-play-state);
+    transition: all var(--carousel-transition-duration) var(--carousel-transition-ease);
+}
+
+.carousel .carousel-rotation-direction:has(.carousel-item:hover) {
+    --carousel-animation-play-state: paused;
+    --_direction-animation-play-state: paused;
+}
+
+.carousel .carousel-item {
+    --_width: var(--_item-width);
+    --_height: var(--_item-height);
+    --_theta-start: 0;
+    --_theta-length: calc(2 * 3.141592653589793);
+    --_segment: calc(var(--_theta-start) + var(--_index) / var(--_num-elements) * var(--_theta-length));
+    --_x: calc(var(--_radius) * cos(var(--_segment)));
+    --_y: 0;
+    --_z: calc(var(--_radius) * sin(var(--_segment)));
+    --_final-x: var(--_x);
+    --_final-y: var(--_y);
+    --_final-z: var(--_z);
+    --_rotation-y: atan2(var(--_x), var(--_z));
+    left: calc(var(--_radius) - var(--_item-width) / 2);
+    top: calc(var(--_radius) - var(--_item-height) / 2);
+    transform: translate3d(var(--_final-x), var(--_final-y), var(--_final-z));
+    transform-style: inherit;
+    width: var(--_width);
+    height: var(--_height);
+    box-shadow: 0 0 var(--carousel-item-glow-size) transparent;
+    animation: carousel-item-rotation-reverse calc(var(--carousel-animation-duration) / 2) reverse linear infinite var(--_direction-animation-play-state);
+    position: absolute;
+}
+
+@keyframes carousel-item-rotation-reverse {
+    from {transform: translate3d(var(--_final-x), var(--_final-y), var(--_final-z)) rotateY(360deg);}
+    to {transform: translate3d(var(--_final-x), var(--_final-y), var(--_final-z)) rotateY(0deg);}
+}
+
+@keyframes carousel-item-rotation-normal {
+    from {transform: rotateY(360deg);}
+    to {transform: rotateY(0deg);}
+}
+
+.carousel .carousel-item a {
+    display: block;
+    width: inherit;
+    height: inherit;
+    text-indent: -9999px;
+    background-color: rgba(var(--carousel-item-empty-color-rgb), 0.5);
+    background-image: var(--_image-url);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    perspective: var(--carousel-3d-perspective);
+    perspective-origin: var(--carousel-3d-perspective-origin);
+    transition: all var(--carousel-transition-duration) var(--carousel-transition-ease);
+    filter: grayscale(100%);
+    animation: carousel-item-rotation-normal var(--carousel-animation-duration) normal linear infinite var(--carousel-animation-play-state);
+    position: relative;
+}
+
+.carousel .carousel-item:hover a {
+    filter: grayscale(0%);
+    box-shadow: 0 0 var(--carousel-item-glow-size) rgb(var(--carousel-item-glow-color-rgb));
+}
+
+.carousel .carousel-item a::before {
+    content: '';
+    width: inherit;
+    height: inherit;
+    background-color: rgba(var(--carousel-item-empty-color-rgb), 0.5);
+    background-image: 
+            linear-gradient(to top, rgba(var(--carousel-bg-color-rgb), 0.25) 0%, rgba(var(--carousel-bg-color-rgb), 1.0) 75%), 
+            var(--_image-url);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    pointer-events: none;
+    top: calc(var(--carousel-item-reflection-blur) * -1);
+    left: 0;
+    filter: blur(var(--carousel-item-reflection-blur)) grayscale(100%);
+    transition: filter var(--carousel-transition-duration) var(--carousel-transition-ease);
+    transform-origin: center bottom;
+    transform: rotateX(90deg) rotateZ(180deg) rotateY(180deg);
+    position: absolute;
+}
+
+.carousel .carousel-item:hover a::before {
+    filter: blur(var(--carousel-item-reflection-blur)) grayscale(0%);
+} 
+
+.carousel .carousel-ground {
+    --_width: var(--_diameter);
+    --_height: var(--_diameter);
+    --_rotation: 90deg;
+    left: calc(var(--_radius) - var(--_width) / 2);
+    top: calc(var(--_radius) - var(--_height) / 2);
+    transform: rotateX(var(--_rotation)) translateZ(calc(var(--_item-height) / -2));
+    width: var(--_width);
+    height: var(--_height);
+    border-radius: 50%;
+    background: radial-gradient(rgba(var(--carousel-shadow-color-rgb), 0.75) 15% , rgba(var(--carousel-bg-color-rgb), 0) 60%);
+    opacity: 0.5;
+    transition: opacity var(--carousel-transition-duration) var(--carousel-transition-ease);
+    position: absolute;
+}
+
+.carousel .carousel-item-wrapper:has(.carousel-item:hover) .carousel-ground {
+    opacity: 0.75;
+}
+
+
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  min-height: 100vh;
+  background-color: #f1f1f16a;
+  z-index: 999999;
+  backdrop-filter: blur(20px);
+  display: grid;
+  place-content: center;
+}
+
+.load-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100px;
+  height: 90px;
+  gap: 2px;
+}
+
+.load-wrapper span {
+  padding: 6px;
+  background-color: #000000;
+  height: 100%;
+  display: block;
+  flex-grow: 1;
+  border-radius: 5px;
+}
+
+.load-wrapper span:nth-child(1) {
+ animation-name: loadSpan;
+ animation-duration: 0.6s;
+ animation-timing-function: linear;
+ animation-fill-mode: backwards;
+ animation-direction: alternate;
+ animation-iteration-count: infinite;
+}
+
+.load-wrapper span:nth-child(2) {
+    animation-name: loadSpan;
+    animation-duration: 0.6s;
+    animation-timing-function: linear;
+    animation-fill-mode: backwards;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-delay: 0.6s;
+}
+
+.load-wrapper span:nth-child(3) {
+    animation-name: loadSpan;
+    animation-duration: 0.6s;
+    animation-timing-function: linear;
+    animation-fill-mode: backwards;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    
+ }
+
+ .load-wrapper span:nth-child(4) {
+    animation-name: loadSpan;
+    animation-duration: 0.6s;
+    animation-timing-function: linear;
+    animation-fill-mode: backwards;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-delay: 0.6s;
+}
+
+.load-wrapper span:nth-child(5) {
+    animation-name: loadSpan;
+    animation-duration: 0.6s;
+    animation-timing-function: linear;
+    animation-fill-mode: backwards;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    
+ }
+
+
+@keyframes loadSpan {
+  from {
+    transform: scaleY(0.5);
+  }
+  to {
+    transform: scaleY(1);
+  }
+}
+
+
+.loader-hide{
+  display: none;
+}
 
 
