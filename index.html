@@ -65,13 +65,18 @@
 
                     </div>
 
-                    <div class="hidden md:flex gap-5 border-l-2 ">
+                    <select id="languageSwitcher" onchange="changeLanguage(this.value)" class="border p-2 rounded-2xl">
+                        <option value="en">English</option>
+                        <option value="uz">O'zbek</option>
+                        <option value="ru">Русский</option>
+                      </select>
 
-                        <img id="darkModeToggle" class="ml-5 hover:cursor-pointer " src="./assets/icons/Icon Button.svg"
+                    <div class="hidden md:flex gap-5 border-l-2">
+                        <img id="darkModeToggle" class="ml-5 hover:cursor-pointer" src="./assets/icons/Icon Button.svg"
                             alt="#">
-
                         <button id="downloadCv" class="bg-black text-white p-2 rounded-xl">Download CV</button>
                     </div>
+
                 </div>
 
             </nav>
@@ -86,9 +91,61 @@
 
                     <div class="pt-80 md:p-10">
 
-                        <h1 class=" text-4xl md:text-6xl font-bold ml-5 animate-pulse">Salom, Men Bekmuhammad 👋</h1>
+                        <h1 class=" text-4xl md:text-6xl font-bold ml-5 animate-pulse" data-en="Hi I am Bekmuhammad" data-uz="Salom, Men Bekmuhammad" data-ru="Здравствуйте, я Бекмухаммaд">Salom, Men Bekmuhammad 👋</h1>
                         <br><br>
-                        <p class="text-base md:pb-12 ml-5">Men Bekmuhammad, web dasturchiman. Front-end dasturlash
+                        <p class="text-base md:pb-12 ml-5"
+
+                        data-ru="
+                        Я Бекмухаммад, веб-разработчик. Фронтальное программирование
+                            в соответствии с
+                            имеет опыт
+                            создавать <br>  интуитивно понятные и эффективные веб-сайты для пользователей 
+                            Я специализируюсь.  Меня интересует <br> программирование в 2021 году и в этой сфере.
+                            сам
+                            Я чувствую себя счастливым. Мои основные навыки: <br><br>
+
+                            1. Интерфейс: HTML, CSS, JavaScript, React, Tailwind CSS, Bootstrap. <br>
+                            2.Дизайн: Фигма. <br>
+                            3-Контроль версий: Git, GitHub. <br><br>
+                            Постоянно изучать новые технологии и применять их на практике
+                            Я стремлюсь <br> Работая в тесном сотрудничестве с клиентами и членами команды, качество и
+                            Я стараюсь создавать современные веб-решения <br>.</p>
+                        "
+
+                        data-en="
+                        I am Bekmuhammad, a web developer. Front-end programming
+                            according to
+                            has experience <br>
+                            to create intuitive and efficient websites for users
+                            I specialize. I am interested in programming in 2021 <br> and in this field
+                            myself
+                            I feel happy. My main skills include: <br><br>
+
+                            1-Front-end: HTML, CSS, JavaScript, React, Tailwind CSS, Bootstrap. <br>
+                            2-Design : Figma. <br>
+                            3-Version control: Git, GitHub. <br><br>
+                            To constantly learn new technologies and put them into practice
+                            I aspire <br> By working in close cooperation with customers and team members, quality and
+                            I try to create modern web solutions <br>.</p>
+                        "
+
+                        data-uz="
+                        Men Bekmuhammad, web dasturchiman. Front-end dasturlash
+                            bo‘yicha
+                            tajribaga ega
+                            bo‘lib, foydalanuvchilar <br> uchun intuitiv va samarali veb-saytlar yaratishga
+                            ixtisoslashganman. Men dasturlashga 2021-yil qiziqishni <br> boshlaganman va bu sohada
+                            o'zimni
+                            baxtli his qilaman.Asosiy mahoratim quyidagilarni o‘z ichiga oladi: <br><br>
+
+                            1-Front-end: HTML, CSS, JavaScript, React, Tailwind CSS, Bootstrap. <br>
+                            2-Dizayn: Figma. <br>
+                            3-Versiyalarni boshqarish: Git, GitHub. <br><br>
+                            Doimiy ravishda yangi texnologiyalarni o‘rganishga va ularni amaliyotga tatbiq qilishga
+                            intilaman. <br> Mijozlar va jamoa a’zolari bilan yaqin hamkorlikda ishlash orqali sifatli va
+                            zamonaviy veb yechimlar <br> yaratishga harakat qilaman.</p>
+                        "
+                        >Men Bekmuhammad, web dasturchiman. Front-end dasturlash
                             bo‘yicha
                             tajribaga ega
                             bo‘lib, foydalanuvchilar <br> uchun intuitiv va samarali veb-saytlar yaratishga
@@ -107,12 +164,12 @@
 
                             <div class="flex items-center gap-3 pb-2">
                                 <img src="./assets/icons/location.svg" alt="#">
-                                <p>Tashkent, Chilonozor</p>
+                                <p  data-ru="Ташкент, Чилонозор">Tashkent, Chilonozor</p>
                             </div>
 
                             <div class="flex items-center gap-3 ml-2 pb-12">
                                 <img src="./assets/icons/icon-dot-emerald-500.svg" alt="#">
-                                <p>Available for new projects</p>
+                                <p data-uz="Yangi loyihalar uchun mavjud" data-en="Available for new projects" data-ru="Доступно для новых проектов">Available for new projects</p>
                             </div>
 
                             <div class=" pb-5 flex md:flex gap-1 items-center">
@@ -128,7 +185,7 @@
                     </div>
 
                     <div class="absolute left-6  md:relative">
-                        <img class=" top-0  z-50 relative md:right-14 md:top-10  transform transition-transform hover:duration-700 md:hover:translate-x-12 md:hover:translate-y-12"
+                        <img class=" top-0  z-40 relative md:right-14 md:top-10  transform transition-transform hover:duration-700 md:hover:translate-x-12 md:hover:translate-y-12"
                             width="280px" height="360px" src="./assets/img/photo_2024-08-22_16-32-19.jpg" alt="#">
                         <img class="hidden  md:flex relative bottom-52" src="./assets/img/Background.png" alt="#">
                     </div>
@@ -141,7 +198,7 @@
                 <div class="pt-24 pb-24">
 
                     <div class="text-center">
-                        <button class="p-1 bg-[#E5E7EB] text-[#4B5563] rounded-xl">About me</button>
+                        <button class="p-1 bg-[#E5E7EB] text-[#4B5563] rounded-xl" data-en="About me" data-uz="Men haqimda" data-ru="обо мне">About me</button>
                     </div>
 
                     <div class=" md:flex justify-between">
@@ -154,9 +211,39 @@
 
 
                         <div class="ml-5 md:pt-28">
-                            <h1 class=" text-2xl md:text-3xl">O'zim haqimda biroz!</h1><br>
+                            <h1 class=" text-2xl md:text-3xl" data-ru="Немного о себе!" data-en="A little about myself!" data-uz="O'zim haqimda biroz!">O'zim haqimda biroz!</h1><br>
 
-                            <p>Men dasturchi sifatida texnologiyaga bo'lgan qiziqishim va yangi <br> bilimlarni
+                            <p
+                            
+                            data-en="My interest in technology as a programmer and new  knowledge
+                            in practice <br>
+                            I am distinguished by my desire to apply. Design in creating modern web applications <br> 
+                            and
+                            ensuring consistency of functionality  is my priority. Each
+                            in the project <br>
+                            to create user-friendly and aesthetically beautiful interfaces
+                            I aspire"
+
+                            data-ru="Мой интерес к технологиям как программиста и новые знания 
+                            на практике <br>
+                            Меня отличает желание подать заявку. Дизайн в создании современных <br>  веб-приложений
+                            и 
+                            обеспечение согласованности функциональности  является <br>   моим приоритетом. Каждый
+                            в проекте 
+                            создавать  удобные и эстетически <br>   красивые интерфейсы
+                            Я стремлюсь"
+
+                            data-uz="Men dasturchi sifatida texnologiyaga bo'lgan qiziqishim va yangi <br> bilimlarni
+                            amaliyotda
+                            qo'llash intilishim bilan ajralib turaman. <br> Zamonaviy veb-ilovalar yaratishda dizayn
+                            va
+                            funksionallikning uyg'unligini ta'minlash <br> mening ustuvor vazifamdir. Har bir
+                            loyihada
+                            foydalanuvchilar uchun qulay va estetik <br> jihatdan chiroyli interfeyslar yaratishga
+                            intilaman."
+
+                            
+                            >Men dasturchi sifatida texnologiyaga bo'lgan qiziqishim va yangi <br> bilimlarni
                                 amaliyotda
                                 qo'llash intilishim bilan ajralib turaman. <br> Zamonaviy veb-ilovalar yaratishda dizayn
                                 va
@@ -165,13 +252,59 @@
                                 foydalanuvchilar uchun qulay va estetik <br> jihatdan chiroyli interfeyslar yaratishga
                                 intilaman.</p><br>
 
-                            <p>Mening asosiy tamoyilim – bu doimiy o'rganish. Texnologiyalar doimiy <br> rivojlanib
+                            <p
+
+                            data-en="My main principle is continuous learning. Technologies <br>  are constantly developing
+                            At the same time,  I am constantly <br>  learning new tools and techniques
+                            i'm ready Each  new project allows me to <br> expand my experience and new
+                            things
+                            provides an opportunity to learn."
+
+                            data-ru="Мой главный принцип – постоянное обучение. Технологии постоянно развиваются <br> 
+                            При этом я постоянно изучаю новые инструменты и техники.
+                            Я готов Каждый <br>  новый проект позволяет мне расширять свой опыт и получать <br> новые
+                            вещи
+                            дает возможность учиться."
+
+                            data-uz="Mening asosiy tamoyilim – bu doimiy o'rganish. Texnologiyalar doimiy <br> rivojlanib
+                            borayotgan bir vaqtda, men yangi vositalar <br> va texnikalarni o'zlashtirishga doimiy
+                            tayyorman. Har bir yangi loyiha menga <br> o'z tajribamni kengaytirish va yangi
+                            narsalarni
+                            o'rganish imkoniyatini beradi."
+
+                            >Mening asosiy tamoyilim – bu doimiy o'rganish. Texnologiyalar doimiy <br> rivojlanib
                                 borayotgan bir vaqtda, men yangi vositalar <br> va texnikalarni o'zlashtirishga doimiy
                                 tayyorman. Har bir yangi loyiha menga <br> o'z tajribamni kengaytirish va yangi
                                 narsalarni
                                 o'rganish imkoniyatini beradi.</p><br>
 
-                            <p>Har bir loyiha men uchun nafaqat texnik ko‘nikmalarni qo‘llash imkoniyati,<br> balki
+                            <p
+                            data-en="Each project is an opportunity for me not only to apply technical skills,<br> but
+                            creative
+                            is also a process. Paying great attention to the  aesthetic aspects <br> of the design,
+                            users
+                            I create as convenient  and intuitive interfaces for. <br> Main for me
+                            task
+                            - making technology convenient and simple for people."
+
+                            data-ru="Каждый проект для меня — это возможность не только <br> применить технические навыки,
+                            творческий
+                            это тоже процесс. Уделяя большое <br> внимание эстетическим аспектам дизайна,
+                            пользователи
+                            Создаю максимально удобные <br>  и интуитивно понятные интерфейсы для .  Главное для меня
+                            задача <br>
+                            - сделать технологии удобными и простыми для людей."
+
+                            data-uz="Har bir loyiha men uchun nafaqat texnik ko‘nikmalarni qo‘llash imkoniyati,<br> balki
+                            ijodiy
+                            jarayon hamdir. Dizaynning estetik <br> jihatlariga katta e’tibor qaratib,
+                            foydalanuvchilar
+                            uchun iloji boricha qulay <br> va intuitiv interfeyslarni yarataman. Men uchun asosiy
+                            vazifa
+                            – texnologiyani <br> insonlar uchun qulay va sodda qilish."
+
+
+                            >Har bir loyiha men uchun nafaqat texnik ko‘nikmalarni qo‘llash imkoniyati,<br> balki
                                 ijodiy
                                 jarayon hamdir. Dizaynning estetik <br> jihatlariga katta e’tibor qaratib,
                                 foydalanuvchilar
@@ -179,7 +312,33 @@
                                 vazifa
                                 – texnologiyani <br> insonlar uchun qulay va sodda qilish.</p> <br>
 
-                            <p> Loyihalar davomida yuzaga keladigan texnik muammolarni ijodiy va samarali yechimlar
+                            <p
+                            data-en="Creative and effective solutions to technical problems that arise during projects
+                            with <br>
+                            I will try to solve it. Through deep understanding of customer demands and needs, <br> they
+                            I try to find the most optimal solutions for . Technical difficulties
+                            face
+                            always learning <br> new ways and expanding my experience
+                            I aspire."
+
+                            data-ru="Креативные и эффективные решения технических проблем,  возникающих в <br>  ходе проектов.
+                            с 
+                            Я постараюсь решить эту проблему.<br> Благодаря глубокому пониманию  требований и  потребностей  клиентов, <br>  они
+                            Я стараюсь найти самые оптимальные решения для . <br> Технические трудности
+                            лицо
+                            всегда изучаю новые способы и расширяю свой опыт
+                            Я стремлюсь."
+
+                            data-uz="Loyihalar davomida yuzaga keladigan texnik muammolarni ijodiy va samarali yechimlar
+                            bilan <br>
+                            hal qilishga intilaman. Mijozlarning talab va ehtiyojlarini chuqur tushunish orqali ular
+                            uchun <br> eng optimal yechimlarni topishga harakat qilaman. Texnik qiyinchiliklarga
+                            duch
+                            kelganda, <br> doimo yangi usullarni o‘rganish <br> va tajribamni kengaytirishga
+                            intilaman."
+
+
+                            > Loyihalar davomida yuzaga keladigan texnik muammolarni ijodiy va samarali yechimlar
                                 bilan <br>
                                 hal qilishga intilaman. Mijozlarning talab va ehtiyojlarini chuqur tushunish orqali ular
                                 uchun <br> eng optimal yechimlarni topishga harakat qilaman. Texnik qiyinchiliklarga
@@ -201,7 +360,7 @@
                 <div class="pt-24 pb-24">
 
                     <div class="text-center">
-                        <button class="w-16 h-7 bg-[#E5E7EB] text-[#4B5563] rounded-xl">Skills</button>
+                        <button class="w-16 h-7 bg-[#E5E7EB] text-[#4B5563] rounded-xl" data-en="Skills" data-ru="Навыки" data-uz="Ko'nikmalar">Skills</button>
                         <br><br>
                         <h1 class="text-xl"></h1>
                     </div>
@@ -228,7 +387,7 @@
         <section>
             <div class="container mx-auto">
 
-                <h1 class="text-center text-5xl pt-20 font-bold animate-pulse">Loyihalar</h1>
+                <h1 class="text-center text-5xl pt-20 font-bold animate-pulse" data-en="Projects" data-ru="Проекты" data-uz="Loyihalar">Loyihalar</h1>
 
                 <div class=" ml-5  md:grid grid-cols-4  gap-5  pt-10 pb-20">
 
@@ -559,82 +718,33 @@
             </div>
         </section>
 
-        <!-- <section class="bg-[#F9FAFB]">
-            <div class="container mx-auto">
-                <div class="carousel md:ml-80">
-
-                    <div class="carousel-control-button left"><input type="radio" name="carousel-control-input"></div>
-                    <div class="carousel-control-button right"><input type="radio" name="carousel-control-input"
-                            checked></div>
-
-                    <div class="carousel-rotation-direction">
-
-                        <ul class="carousel-item-wrapper" style="--_num-elements: 11">
-
-                            <li class="carousel-item"
-                                style="--_index: 1; --_image-url: url('https://images.unsplash.com/photo-1706485220806-2d0d9ce98555?q=80&w=2127&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')">
-                                <a target="_blank">Architecture Example 1</a>
-                            </li>
-                            <li class="carousel-item"
-                                style="--_index: 2; --_image-url: url('https://images.unsplash.com/photo-1706146280538-620fa8cda080?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')">
-                                <a href="" target="_blank">Architecture Example 2</a>
-                            </li>
-                            <li class="carousel-item"
-                                style="--_index: 3; --_image-url: url('https://images.unsplash.com/photo-1702298616106-adbe0f447455?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')">
-                                <a href="" target="_blank">Architecture Example 3</a>
-                            </li>
-                            <li class="carousel-item"
-                                style="--_index: 4; --_image-url: url('https://images.unsplash.com/photo-1565363887713-783cd82d36d2?q=80&w=1364&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')">
-                                <a href="" target="_blank">Architecture Example 4</a>
-                            </li>
-                            <li class="carousel-item"
-                                style="--_index: 5; --_image-url: url('https://images.unsplash.com/photo-1701025034709-bef78e69d1ee?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')">
-                                <a href="" target="_blank">Architecture Example 5</a>
-                            </li>
-                            <li class="carousel-item"
-                                style="--_index: 6; --_image-url: url('https://images.unsplash.com/photo-1701824580548-4f285fc0b80a?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')">
-                                <a href="" target="_blank">Architecture Example 6</a>
-                            </li>
-                            <li class="carousel-item"
-                                style="--_index: 7; --_image-url: url('https://images.unsplash.com/photo-1558472306-75b150ac26eb?q=80&w=2030&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')">
-                                <a href="" target="_blank">Architecture Example 7</a>
-                            </li>
-                            <li class="carousel-item"
-                                style="--_index: 8; --_image-url: url('https://images.unsplash.com/photo-1713623210045-95d02b35c4a2?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')">
-                                <a href="" target="_blank">Architecture Example 8</a>
-                            </li>
-                            <li class="carousel-item"
-                                style="--_index: 9; --_image-url: url('https://images.unsplash.com/photo-1700846968547-ace2dacd5e0b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')">
-                                <a href="" target="_blank">Architecture Example 9</a>
-                            </li>
-                            <li class="carousel-item"
-                                style="--_index: 10; --_image-url: url('https://images.unsplash.com/photo-1700846978475-5f4dd936c00a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')">
-                                <a href="" target="_blank">Architecture Example 10</a>
-                            </li>
-                            <li class="carousel-item"
-                                style="--_index: 11; --_image-url: url('https://images.unsplash.com/photo-1707788620837-cd3efcce3ceb?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')">
-                                <a href="" target="_blank">Architecture Example 11</a>
-                            </li>
-
-                            <li class="carousel-ground"></li>
-
-                        </ul>
-
-                    </div>
-
-                </div>
-            </div>
-        </section> -->
-
         <section id="section-6" class="bg-[#F9FAFB]">
             <div class="container mx-auto">
 
                 <div class="pt-24 pb-24">
 
                     <div class="text-center pb-12">
-                        <button class="w-20 h-7 bg-[#E5E7EB] text-[#4B5563] rounded-xl">Contact</button>
+                        <button class="w-20 h-7 bg-[#E5E7EB] text-[#4B5563] rounded-xl" data-en="Contact" data-ru="Контакт" data-uz="Aloqa">Contact</button>
                         <br><br>
-                        <h1 class="text-xl">Imom Buxoriy bobomizning “Al Jome as sahih” kitobining eng <br> birinchi
+                        <h1 class="text-xl"
+                        data-en=" The first book of Imam Bukhari's grandfathers is Al-Jome as sahih.<br> 
+                        hadith 
+                        It started with the hadith Innamal a'malu bin niyyati,<br>  that is, All actions are based on intention.
+                        depends."
+
+                        data-ru="Первая книга дедов Имама Бухари – «Аль-Джоме как сахих».<br>
+                        хадис
+                        Все началось с хадиса «Иннамал а'малу  бин нийяти»,<br> то есть «Все действия основаны на намерении».
+                        зависит от."
+
+                        data-uz="Imom Buxoriy bobomizning “Al Jome as sahih” kitobining eng <br> birinchi
+                        hadisi
+                        shu hadis bilan boshlangan: “Innamal a’malu <br> bin niyyati” ya’ni, “Barcha amallar niyatga
+                        bog’liq”."
+
+
+
+                        >Imom Buxoriy bobomizning “Al Jome as sahih” kitobining eng <br> birinchi
                             hadisi
                             shu hadis bilan boshlangan: “Innamal a’malu <br> bin niyyati” ya’ni, “Barcha amallar niyatga
                             bog’liq”.</h1>
@@ -653,7 +763,7 @@
                     </div>
 
                     <div class="pb-2">
-                        <p class="text-center">You may also find me on these platforms!</p>
+                        <p class="text-center" data-uz="Siz meni ushbu platformalarda ham topishingiz mumkin!" data-en="You may also find me on these platforms!" data-ru="Вы также можете найти меня на этих платформах!">You may also find me on these platforms!</p>
                     </div>
 
                     <div class="flex gap-5 justify-center">
@@ -689,13 +799,12 @@
                             <div class="container-lg">
                                 <ul class="social fa-ul">
                                     <li><i class="fa fa-li fa-globe"></i><a href="#">Website</a></li>
-                                    <li><i class="fa fa-li fa-envelope"></i><a
-                                            href="#">aripovbekmuhammad2@gmail.com</a></li>
+                                    <li><i class="fa fa-li fa-envelope"></i><a href="#">aripovbekmuhammad2@gmail.com</a>
+                                    </li>
                                     <li><i class="fa fa-li fa-phone"></i><a href="tel:(+9989) 99
                                         895-35-01">(+9989) 99
                                             895-35-01</a></li>
-                                    <li><i class="fa fa-li fa-codepen"></i><a
-                                            href="#">WebCode</a></li>
+                                    <li><i class="fa fa-li fa-codepen"></i><a href="#">WebCode</a></li>
                                     <li><i class="fa fa-li fa-github"></i><a
                                             href="https://github.com/BekmuhammadDev">GitHub</a></li>
                                     <li><i class="fa fa-li fa-reddit"></i><a
@@ -754,6 +863,47 @@
     });
 
 
+    document.getElementById('downloadCv').addEventListener('click', function () {
+        // Fayl URL-manzili
+        const resumeUrl = './assets/Cv/Cv.pdf'; // Bu yerda PDF faylning to'liq manzilini yozing
+
+        // Faylni yuklab olish uchun link yaratish
+        const link = document.createElement('a');
+        link.href = resumeUrl;
+        link.download = 'Resume.pdf'; // Yuklangan fayl nomi
+        link.click();
+    });
+
+
+    function changeLanguage(lang) {
+      // Sahifadagi barcha `data-` atributli elementlarni olish
+      const elements = document.querySelectorAll('[data-' + lang + ']');
+
+      // Har bir elementni yangilash (HTML bilan)
+      elements.forEach((element) => {
+        element.innerHTML = element.getAttribute('data-' + lang);
+      });
+    }
+
+
+      // Sahifa yuklanganda saqlangan tilni tiklash
+      document.addEventListener('DOMContentLoaded', () => {
+      const savedLang = localStorage.getItem('lang') || 'en'; // Saqlangan tilni olish yoki default 'en'
+      changeLanguage(savedLang);
+    });
+
+    function changeLanguage(lang) {
+      // Tilni localStorage'da saqlash
+      localStorage.setItem('lang', lang);
+
+      // Sahifadagi barcha `data-` atributli elementlarni olish
+      const elements = document.querySelectorAll('[data-' + lang + ']');
+
+      // Har bir elementni yangilash (HTML bilan)
+      elements.forEach((element) => {
+        element.innerHTML = element.getAttribute('data-' + lang);
+      });
+    }
 </script>
 
 
